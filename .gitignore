@@ -1,0 +1,7 @@
+.nodemonignore
+node_modules
+npm-debug.log
+.DS_Store
+app/templates/compiledTemplates.js
+
+
