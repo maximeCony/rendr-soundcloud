@@ -9,7 +9,7 @@ var app = express();
 
 var dataAdapterConfig = {
   host: 'api.soundcloud.com',
-  protocol: 'https'
+  protocol: 'https',
 };
 
 var server = rendr.createServer({

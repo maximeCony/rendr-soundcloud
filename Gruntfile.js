@@ -87,13 +87,13 @@ module.exports = function(grunt) {
         src: [ 'app/**/*.js' ],
         dest: 'public/mergedAssets.js'
       },
-      tests: {
-        src: [
-          'test/helper.js',
-          'test/app/**/*.js'
-        ],
-        dest: 'public/testBundle.js'
-      }
+      // tests: {
+      //   src: [
+      //     'test/helper.js',
+      //     'test/app/**/*.js'
+      //   ],
+      //   dest: 'public/testBundle.js'
+      // }
     }
   });
 
@@ -113,7 +113,6 @@ module.exports = function(grunt) {
       grunt.fail.fatal(new Error("nodemon quit"));
     });
   });
-
 
   grunt.registerTask('compile', ['handlebars', 'browserify', 'stylus']);
 

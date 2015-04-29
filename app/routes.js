@@ -2,5 +2,5 @@
 
 module.exports = function(match) {
   match('', 'home#index');
-  // match('/users/:user_id/likes', 'likes#index');
+  match('/:user_id/likes', 'like#index');
 };
